@@ -1,0 +1,4 @@
+#!/bin/sh
+target="am335x"
+time mkimage -A arm -O linux -T ramdisk -C gzip -a 0x04000000 -n "buildroot" -d ./build/$target/images/rootfs.cpio.gz ./images/$target-buildroot-uramdisk.img.gz
+sudo cp ./images/$target-buildroot-uramdisk.img.gz /media/share/

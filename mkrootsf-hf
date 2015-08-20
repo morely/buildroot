@@ -1,0 +1,2 @@
+time mkimage -A arm -O linux -T ramdisk -C gzip -a 0x04000000 -n "buildroot" -d ./build/zynq-hf/images/rootfs.cpio.gz ./images/zynq-hf-buildroot-uramdisk.img.gz
+sudo cp ./images/zynq-hf-buildroot-uramdisk.img.gz /mnt/share/uramdisk.image.gz.hf
